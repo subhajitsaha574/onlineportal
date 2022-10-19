@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Exam Portal</title>
+    <link rel="stylesheet" href="Result.css">
+</head>
+
+<body>
+    <script>
+        var count = 0;
+        function Question1() {
+            var word = document.getElementById('ans1').value;
+            if (word === 'b' || word === 'B') {
+                count++;
+            }
+        };
+        function Question2() {
+            var word = document.getElementById('ans2').value;
+            if (word === 'c' || word === 'C') {
+                count++;
+            }
+        };
+        function Question3() {
+            var word = document.getElementById('ans3').value;
+            if (word === 'd' || word === 'D') {
+                count++;
+            }
+        };
+        function Question4() {
+            var word = document.getElementById('ans4').value;
+            if (word === 'c' || word === 'C') {
+                count++;
+            }
+        };
+        function Question5() {
+            var b = 0;
+            var word = document.getElementById('ans5').value;
+            if (b <1) {
+                if (word === 'b' || word === 'B') {
+                    count++;
+                }
+                b++;
+            }
+            alert("Result=" + count + "out of 5");
+        };
+    </script>
+    <div class="qu">
+        <span>
+            <h1>College Name:<input type="text" id="CollegeName" class="box"></h1>
+            <h1>Name:<input type="text" id="Name" class="box"></h1>
+            <h1>University Roll:<input type="text" id="UniversityRoll" class="box"></h1>
+        </span>
+        <h2>Q1. What is the full form of RAM?</h2>
+        <h3>(a) Read Only Memory</h3>
+        <h3>(b) Random Access Memory</h3>
+        <h3>(c) Read Access Memory</h3>
+        <h3>(d) Random Only Memory</h3>
+        Ans:<input type="text" id="ans1" onchange="Question1();">
+        <h2>Q2. HTML is the method where ordinary text can be converted into</h2>
+        <h3>(a) ASCII Text</h3>
+        <h3>(b) EBCDIC Text</h3>
+        <h3>(c) Hypertext</h3>
+        <h3>(d) None of the above</h3>
+        Ans:<input type="text" id="ans2" onchange="Question2();">
+        <h2>Q3. There are _ levels of heading in HTML</h2>
+        <h3>(a) Three</h3>
+        <h3>(b) Four</h3>
+        <h3>(c) Five</h3>
+        <h3>(d) Six</h3>
+        Ans:<input type="text" id="ans3" onchange="Question3();">
+        <h2>Q4. In HTML __ tag contains the information about the current document such as title etc.</h2>
+        <h3>(a) Body </h3>
+        <h3>(b) TD</h3>
+        <h3>(c) HEAD</h3>
+        <h3>(d) none</h3>
+        Ans:<input type="text" id="ans4" onchange="Question4();">
+        <h2>Q5. Example of picture editing software is</h2>
+        <h3>(a) ms paint </h3>
+        <h3>(b) photoshop</h3>
+        <h3>(c) animator pro</h3>
+        <h3>(d) none of the above</h3>
+        Ans:<input type="text" id="ans5">
+        <button type="submit" onclick="Question5();">submit</button>
+    </div>
+</body>
+
+</html>

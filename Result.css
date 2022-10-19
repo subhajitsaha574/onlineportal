@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(108, 163, 45);
+    background-size: cover;
+}
+.qu{
+    margin-left: 25%;
+}
+.box{
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
